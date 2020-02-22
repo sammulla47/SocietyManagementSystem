@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.Flat" table="flat">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="FlatId">
+			<column name="FlatId" />
+		</property>
+
+		<property name="PhoneNumber">
+			<column name="PhoneNum"/>
+		</property>
+		
+		<property name="OwnerName">
+		<column name="OwnerName"/>
+		</property>
+		
+		<property name="Email">
+		<column name="Email"/>
+		</property>
+		
+		<property name="Image">
+		<column name="Images"/>
+		</property>
+		
+		<property name="EntryDate">
+		<column name="EntryDate"/>
+		</property>
+		
+		<property name="UserId">
+		<column name="UserId"/>
+		</property>
+		
+		<property name="UserPass">
+		<column name="UserPass"/>
+		</property>
+		
+		<property name="Current">
+		<column name="Current"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

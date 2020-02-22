@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/projectsms</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">root</property>
+<property name="hibernate.connection.pool_size">10</property>
+<property name="show_sql">true</property>
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+<mapping resource="Bill.hbm.xml"/>
+<mapping resource="Event.hbm.xml"/>
+<mapping resource="Flat.hbm.xml" />
+<mapping resource="Facilities.hbm.xml"/>
+<mapping resource="Help.hbm.xml"/>
+<mapping resource="RentFlat.hbm.xml"/>
+<mapping resource="SellFlat.hbm.xml"/>
+<mapping resource="SocietyRegistration.hbm.xml"/>
+<mapping resource="Staff.hbm.xml"/>
+<mapping resource="ATM.hbm.xml" />
+<mapping resource="Bank.hbm.xml" />
+<mapping resource="Clinic.hbm.xml" />
+<mapping resource="Hospital.hbm.xml" />
+<mapping resource="Mall.hbm.xml" />
+<mapping resource="Medical.hbm.xml" />
+<mapping resource="RailwayStation.hbm.xml" />
+<mapping resource="RestaurantsHotels.hbm.xml" />
+<mapping resource="SchoolCollege.hbm.xml" />
+<mapping resource="SuperMarket.hbm.xml" />
+<mapping resource="Theater.hbm.xml" />
+</session-factory>
+</hibernate-configuration>

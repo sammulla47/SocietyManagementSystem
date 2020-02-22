@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.Facilities" table="facilities">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="BookingId">
+			<column name="BookingId" />
+		</property>
+
+		<property name="Booking">
+			<column name="Booking"/>
+		</property>
+		
+		<property name="Details">
+		<column name="Details"/>
+		</property>
+		
+		<property name="DateOfBooking">
+		<column name="DateOfBooking"/>
+		</property>
+		
+		<property name="DateBook">
+		<column name="DateBook"/>
+		</property>
+		
+		<property name="StartTime">
+		<column name="StartT"/>
+		</property>
+		
+		<property name="EndTime">
+		<column name="EndT"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

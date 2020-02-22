@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.Staff" table="staff">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="Name">
+			<column name="Name" />
+		</property>
+
+		<property name="WorkerD">
+			<column name="WorkerD"/>
+		</property>
+		
+		<property name="IdProof">
+		<column name="IdProof"/>
+		</property>
+		
+		<property name="Image">
+		<column name="Image"/>
+		</property>
+		
+		<property name="Phone">
+		<column name="contact"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

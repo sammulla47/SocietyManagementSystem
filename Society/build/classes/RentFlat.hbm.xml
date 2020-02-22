@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.RentFlat" table="rentflat">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="FlatId">
+			<column name="FlatId" />
+		</property>
+
+		<property name="RentId">
+			<column name="RId"/>
+		</property>
+		
+		<property name="RenterPass">
+		<column name="RPass"/>
+		</property>
+		
+		<property name="EntryDate">
+		<column name="EntryDate"/>
+		</property>
+		
+		<property name="Agreement">
+		<column name="Agreement"/>
+		</property>
+		
+		<property name="leaveDate">
+		<column name="leaveDate"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

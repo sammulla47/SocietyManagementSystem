@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.SellFlat" table="sellflat">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="FlatId">
+			<column name="FlatId" />
+		</property>
+	
+		<property name="Price">
+		<column name="Price"/>
+		</property>
+		
+		<property name="Contact">
+		<column name="Contact"/>
+		</property>
+		
+		<property name="Details">
+		<column name="Details"/>
+		</property>
+		
+		<property name="OwnerName">
+		<column name="OwnerName"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

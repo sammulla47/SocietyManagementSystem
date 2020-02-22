@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.Help" table="help">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="UserName">
+			<column name="UserName" />
+		</property>
+			
+		<property name="FlatId">
+			<column name="FlatId" />
+		</property>	
+		<property name="Details">
+			<column name="Details"/>
+		</property>
+		
+		<property name="DatePosted">
+		<column name="DateP"/>
+		</property>
+		
+		<property name="Image">
+		<column name="Image"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

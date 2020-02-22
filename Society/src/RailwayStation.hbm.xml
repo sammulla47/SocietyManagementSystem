@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.RailwayStation" table="railwaystation">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="Name">
+			<column name="Name" />
+		</property>
+
+		<property name="Location">
+			<column name="Location"/>
+		</property>
+		
+		<property name="KM">
+		<column name="KM"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

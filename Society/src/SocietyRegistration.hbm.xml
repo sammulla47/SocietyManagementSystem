@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.SocietyRegistration" table="societyreg">
+
+		<id name="Id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="SID">
+			<column name="SID" />
+		</property>
+
+		<property name="SPass">
+			<column name="SPass"/>
+		</property>
+		
+		<property name="Address">
+		<column name="Address"/>
+		</property>
+		
+		<property name="City">
+		<column name="City"/>
+		</property>
+		
+		<property name="Image">
+		<column name="Images"/>
+		</property>
+		
+		<property name="EntryDate">
+		<column name="EntryDate"/>
+		</property>
+		
+		<property name="Pincode">
+		<column name="Pincode"/>
+		</property>
+		
+		<property name="FlatT">
+		<column name="FlatT"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

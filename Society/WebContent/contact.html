@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Contact-Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="StyleSheet.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-lift w3-hide-small">
+      <a href="StartP.html" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="LOGO50.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+  <div class="w3-col m6 w3-padding-large">
+	<form action="EmailSendingServlet" method="post">
+		<table border="0" width="35%" class="w3-large" align="center">
+			<caption><h2>Send E-mail To Contact-Us</h2></caption>
+			<tr>
+				<td width="50%">Recipient Address</td>
+				<td><input type="Email" Placeholder="society@gmail.com" name="recipient" size="35"/></td>
+			</tr>
+			<tr>
+				<td>Subject </td>
+				<td><input type="text" name="subject" size="35"/></td>
+			</tr>
+			<tr>
+				<td>Content </td>
+				<td><textarea rows="10" cols="39" name="content"></textarea> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit"class="w3-bar-item w3-button" value="Send"/></td>
+			</tr>
+		</table>
+		
+	</form>
+	</div>
+</body>
+</html>

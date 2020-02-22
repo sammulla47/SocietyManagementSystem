@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.Bill" table="billmain">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="SecurityP">
+			<column name="SecurityP" />
+		</property>
+
+		<property name="LiftP">
+			<column name="LiftP" />
+		</property>
+
+		<property name="WaterP">
+			<column name="WaterP" />
+		</property>
+
+		<property name="CleaningP">
+			<column name="CleaningP" />
+		</property>
+
+		<property name="Monthly">
+			<column name="Monthly" />
+		</property>
+
+		<property name="DiscountA">
+			<column name="DiscountA" />
+		</property>
+
+		<property name="DiscountP">
+			<column name="DiscountP"/>
+		</property>
+		<property name="Year">
+			<column name="Year" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

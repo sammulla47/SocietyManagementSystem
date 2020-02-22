@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.society.Event" table="event">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment" />
+		</id>
+
+		<property name="SocietyName">
+			<column name="SName" />
+		</property>
+
+		<property name="EventId">
+			<column name="EventId" />
+		</property>
+
+		<property name="Topic">
+			<column name="Topic"/>
+		</property>
+		
+		<property name="EventDate">
+		<column name="EventDate"/>
+		</property>
+		
+		<property name="StartTime">
+		<column name="StartT"/>
+		</property>
+		
+		<property name="EndTime">
+		<column name="EndT"/>
+		</property>
+		
+		<property name="Place">
+		<column name="Place"/>
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>
