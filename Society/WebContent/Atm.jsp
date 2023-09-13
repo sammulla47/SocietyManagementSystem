@@ -41,7 +41,7 @@
 <script src="js/Chart.js"></script>
 <!-- //chart -->
  <!-- js-->
-<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-3.6.3.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <!--webfonts-->
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -404,7 +404,7 @@
 				<!-- container -->
 				<div class="container">
 					<div class="copyright">
-						<p>© 2017 Society . All Rights Reserved . </p> 
+						<p>ï¿½ 2017 Society . All Rights Reserved . </p> 
 					</div>
 					<!-- page footer buttons -->
 					
